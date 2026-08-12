@@ -60,24 +60,28 @@
           </div>
 
           <div class="control-section disabled" id="adjustSection">
-            <div class="section-title"><span>03</span><div><strong>자동 배치</strong><small>제목과 도장을 한 번에 배치합니다</small></div></div>
+            <div class="section-title"><span>01</span><div><strong>먼저 자동으로 만들기</strong><small>제목과 도장을 한 번에 배치합니다</small></div></div>
             <button class="click-auto" id="autoPlaceBtn" disabled><span>✦</span><div><strong>딸깍</strong><small>한 번 누르면 제목과 도장이 놓입니다</small></div></button>
             <p class="fixed-size">제목 크기 <b>2.5% 고정</b></p>
             <p class="tip">‘딸깍’을 누른 뒤 제목 박스와 도장을 미리보기에서 직접 드래그할 수 있어요.</p>
           </div>
 
           <div class="control-section disabled" id="textEditSection">
-            <div class="section-title"><span>04</span><div><strong>내용 바꾸기</strong><small>선택한 부분만 변경합니다</small></div></div>
+            <div class="section-title"><span>02</span><div><strong>다른 내용도 바꾸기</strong><small>필요할 때만 사용하세요</small></div></div>
             <div class="text-fields">
               <input id="newText" type="text" placeholder="새 문구를 입력하세요" disabled>
             </div>
-            <button class="select-area" id="selectAreaBtn" disabled>＋ 바꿀 위치 선택하기</button>
+            <button class="select-area" id="selectAreaBtn" disabled>＋ 문서에서 바꿀 곳 누르기</button>
+            <p class="tap-help">새 문구를 입력한 뒤, 원래 글자가 있는 곳을 한 번만 눌러주세요.</p>
             <div class="edit-list" id="editList"><p>추가된 변경 내용이 없습니다.</p></div>
           </div>
         </aside>
 
         <div class="preview-panel">
-          <div class="preview-head"><div><strong>미리보기</strong><small id="fileMeta">이미지를 올리면 이곳에 표시됩니다</small></div><button id="resetBtn" disabled>↻ 처음부터</button></div>
+          <div class="preview-head">
+            <div><strong>미리보기</strong><small id="fileMeta">이미지를 올리면 이곳에 표시됩니다</small></div>
+            <div class="preview-actions"><button id="zoomBtn" type="button" disabled>＋ 크게 보기</button><button id="resetBtn" disabled>↻ 처음부터</button></div>
+          </div>
           <div class="canvas-stage" id="canvasStage">
             <div class="empty-state" id="emptyState">
               <div class="paper-icon"><span></span><span></span><span></span></div>
