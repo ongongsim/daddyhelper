@@ -12,7 +12,7 @@
 <body>
   <header class="topbar">
     <div class="topbar-left">
-      <button class="back-btn" id="backBtn" type="button" aria-label="업로드 화면으로 돌아가기">← <span>뒤로</span></button>
+      <button class="back-btn" id="backBtn" type="button" aria-label="마지막 작업 실행 취소" disabled>↶ <span>실행 취소</span></button>
       <a class="brand" href="#" aria-label="견적서 메이커 홈"><span class="brand-mark">견</span><span>견적서 메이커</span></a>
     </div>
     <span class="privacy"><i></i> 파일은 서버에 저장되지 않아요</span>
@@ -93,7 +93,7 @@
               <canvas id="previewCanvas"></canvas>
               <div id="selectionBox" class="selection-box" hidden></div>
               <div id="editOverlayLayer" class="edit-overlay-layer"></div>
-              <div id="maskBox" class="mask-box selectable-object" hidden><span>견적서</span><button class="object-delete" type="button" aria-label="제목 삭제">×</button></div>
+              <div id="maskBox" class="mask-box selectable-object" hidden><span>견적서</span><i class="resize-handle" aria-hidden="true"></i><button class="object-delete" type="button" aria-label="제목 삭제">×</button></div>
               <div id="stampBox" class="stamp-box selectable-object" hidden><img id="stampPreview" alt="업로드한 도장"><i></i><button class="object-delete" type="button" aria-label="도장 삭제">×</button></div>
             </div>
           </div>
